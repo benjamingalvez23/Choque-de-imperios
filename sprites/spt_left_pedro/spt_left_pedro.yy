@@ -1,9 +1,9 @@
 {
   "$GMSprite":"v2",
   "%Name":"spt_left_pedro",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":63,
-  "bbox_left":14,
+  "bbox_left":6,
   "bbox_right":48,
   "bbox_top":1,
   "collisionKind":1,

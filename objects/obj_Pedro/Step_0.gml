@@ -1,24 +1,40 @@
-btnDerecha   = keyboard_check(vk_right);
-btnIzquierda = keyboard_check(vk_left);
-btnArriba    = keyboard_check(vk_up);
-btnAbajo     = keyboard_check(vk_down);
+btnDerecha   = keyboard_check(vk_right) || keyboard_check(ord("D"));
+btnIzquierda = keyboard_check(vk_left)  || keyboard_check(ord("A"));
+btnArriba    = keyboard_check(vk_up)    || keyboard_check(ord("W"));
+btnAbajo     = keyboard_check(vk_down)  || keyboard_check(ord("S"));
+paso_x = (btnDerecha - btnIzquierda) * velocidad;
+paso_y = (btnAbajo - btnArriba) * velocidad;
 
-if (btnDerecha) {
-    x += 4;
-	sprite_index = spt_right_pedro;
+// Movimiento del Jugador
+if (paso_x != 0){
+    paso_y = 0;
 }
-else if (btnIzquierda) {
-    x -= 4;
-	sprite_index = spt_left_pedro;
+if (btnDerecha){
+    sprite_index = spt_right_pedro;
+} else if (btnIzquierda){
+    sprite_index = spt_left_pedro;
+} else if (btnArriba){
+    sprite_index = spt_up_pedro;
+} else if (btnAbajo){
+    sprite_index = spt_down_pedro;
+} else{
+    sprite_index = spt_idle_pedro;
 }
-else if (btnArriba) {
-    y -= 4;
-	sprite_index = spt_up_pedro;
+
+// Colision eje x
+if (place_meeting(x + paso_x, y, obj_muro)){
+    while (!place_meeting(x + sign(paso_x), y, obj_muro)){
+        x += sign(paso_x);
+    }
+    paso_x = 0;
 }
-else if (btnAbajo) {
-    y += 4;
-	sprite_index = spt_down_pedro;
+x += paso_x;
+
+// Colision eje y
+if (place_meeting(x, y + paso_y, obj_muro)){
+    while (!place_meeting(x, y + sign(paso_y), obj_muro)) {
+        y += sign(paso_y);
+    }
+    paso_y = 0;
 }
-else{
-	sprite_index = spt_idle_pedro;
-}
+y += paso_y;
