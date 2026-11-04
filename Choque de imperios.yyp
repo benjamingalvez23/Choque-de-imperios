@@ -31,8 +31,10 @@
   "name":"Choque de imperios",
   "resources":[
     {"id":{"name":"Enemy_Mosquetero","path":"objects/Enemy_Mosquetero/Enemy_Mosquetero.yy",},},
+    {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
     {"id":{"name":"Object3","path":"objects/Object3/Object3.yy",},},
     {"id":{"name":"Player_Lautaro","path":"objects/Player_Lautaro/Player_Lautaro.yy",},},
+    {"id":{"name":"InicioNl1","path":"rooms/InicioNl1/InicioNl1.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
@@ -42,6 +44,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"InicioNl1","path":"rooms/InicioNl1/InicioNl1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
