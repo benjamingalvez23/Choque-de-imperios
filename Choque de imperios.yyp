@@ -14,6 +14,7 @@
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objetos/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Nivel1","folderPath":"folders/Objetos/Nivel1.yy","name":"Nivel1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sala","folderPath":"folders/Sala.yy","name":"Sala","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Nivel2","folderPath":"folders/Sala/Nivel2.yy","name":"Nivel2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Sala/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Nivel1","folderPath":"folders/Sala/Nivel1.yy","name":"Nivel1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -31,6 +32,7 @@
   },
   "name":"Choque de imperios",
   "resources":[
+    {"id":{"name":"Cambio_Sala","path":"objects/Cambio_Sala/Cambio_Sala.yy",},},
     {"id":{"name":"Enemy_Mosquetero","path":"objects/Enemy_Mosquetero/Enemy_Mosquetero.yy",},},
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
@@ -38,7 +40,9 @@
     {"id":{"name":"obj_Pedro","path":"objects/obj_Pedro/obj_Pedro.yy",},},
     {"id":{"name":"Object3","path":"objects/Object3/Object3.yy",},},
     {"id":{"name":"Player_Lautaro","path":"objects/Player_Lautaro/Player_Lautaro.yy",},},
+    {"id":{"name":"Menu_1","path":"rooms/Menu_1/Menu_1.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
@@ -54,6 +58,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Menu_1","path":"rooms/Menu_1/Menu_1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
