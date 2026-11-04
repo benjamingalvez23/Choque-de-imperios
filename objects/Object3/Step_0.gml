@@ -1,5 +1,3 @@
-life--;
-
-if (life <= 0) {
-    instance_destroy();
-}
+speed = 6;
+damage = 1;
+life = 90;
