@@ -9,8 +9,8 @@
   "name":"obj_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pedro",
-    "path":"folders/Sprites/Pedro.yy",
+    "name":"obj_nivel2",
+    "path":"folders/Objetos/obj_nivel2.yy",
   },
   "parentObjectId":null,
   "persistent":false,
