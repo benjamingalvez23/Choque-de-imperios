@@ -35,6 +35,7 @@
   "resources":[
     {"id":{"name":"Cambio_Sala","path":"objects/Cambio_Sala/Cambio_Sala.yy",},},
     {"id":{"name":"Enemy_Mosquetero","path":"objects/Enemy_Mosquetero/Enemy_Mosquetero.yy",},},
+    {"id":{"name":"obj_barra","path":"objects/obj_barra/obj_barra.yy",},},
     {"id":{"name":"obj_boton_jugar","path":"objects/obj_boton_jugar/obj_boton_jugar.yy",},},
     {"id":{"name":"obj_boton_opciones","path":"objects/obj_boton_opciones/obj_boton_opciones.yy",},},
     {"id":{"name":"obj_boton_salir","path":"objects/obj_boton_salir/obj_boton_salir.yy",},},
@@ -51,6 +52,8 @@
     {"id":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
+    {"id":{"name":"spt_barra","path":"sprites/spt_barra/spt_barra.yy",},},
+    {"id":{"name":"spt_canon","path":"sprites/spt_canon/spt_canon.yy",},},
     {"id":{"name":"spt_down_pedro","path":"sprites/spt_down_pedro/spt_down_pedro.yy",},},
     {"id":{"name":"spt_enemy","path":"sprites/spt_enemy/spt_enemy.yy",},},
     {"id":{"name":"spt_fondo","path":"sprites/spt_fondo/spt_fondo.yy",},},

@@ -5,6 +5,7 @@ btnAbajo     = keyboard_check(vk_down)  || keyboard_check(ord("S"));
 paso_x = (btnDerecha - btnIzquierda) * velocidad;
 paso_y = (btnAbajo - btnArriba) * velocidad;
 
+
 // Movimiento del Jugador
 if (paso_x != 0){
     paso_y = 0;
