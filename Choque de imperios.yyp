@@ -11,9 +11,9 @@
   "defaultScriptType":0,
   "Folders":[
     {"$GMFolder":"","%Name":"Objetos","folderPath":"folders/Objetos.yy","name":"Objetos","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"obj_nivel2","folderPath":"folders/Objetos/obj_nivel2.yy","name":"obj_nivel2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objetos/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Nivel1","folderPath":"folders/Objetos/Nivel1.yy","name":"Nivel1","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"obj_nivel2","folderPath":"folders/Objetos/obj_nivel2.yy","name":"obj_nivel2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sala","folderPath":"folders/Sala.yy","name":"Sala","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Sala/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Nivel1","folderPath":"folders/Sala/Nivel1.yy","name":"Nivel1","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -33,6 +33,7 @@
   },
   "name":"Choque de imperios",
   "resources":[
+    {"id":{"name":"Barra_Inventario","path":"objects/Barra_Inventario/Barra_Inventario.yy",},},
     {"id":{"name":"Cambio_Sala","path":"objects/Cambio_Sala/Cambio_Sala.yy",},},
     {"id":{"name":"Enemy_Mosquetero","path":"objects/Enemy_Mosquetero/Enemy_Mosquetero.yy",},},
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
@@ -41,6 +42,7 @@
     {"id":{"name":"obj_Pedro","path":"objects/obj_Pedro/obj_Pedro.yy",},},
     {"id":{"name":"Object3","path":"objects/Object3/Object3.yy",},},
     {"id":{"name":"Player_Lautaro","path":"objects/Player_Lautaro/Player_Lautaro.yy",},},
+    {"id":{"name":"Inventario","path":"rooms/Inventario/Inventario.yy",},},
     {"id":{"name":"Menu_1","path":"rooms/Menu_1/Menu_1.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
@@ -61,6 +63,7 @@
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Menu_1","path":"rooms/Menu_1/Menu_1.yy",},},
     {"roomId":{"name":"Room_2","path":"rooms/Room_2/Room_2.yy",},},
+    {"roomId":{"name":"Inventario","path":"rooms/Inventario/Inventario.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
