@@ -10,3 +10,4 @@ if (keyboard_check(ord("M")) && vida < vida_max){
 } else { // Si no se pulsa la tecla M o el muro este reparado, el contador vuelva a 0
     contador_reparar = 0;
 }
+
