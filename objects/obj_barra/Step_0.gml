@@ -1,4 +1,4 @@
-
+/*
 if (!instance_exists(muro)) // Si el muro ya no existe (fue destruido)...
 {
     instance_destroy(); // ...la barra también se destruye
@@ -24,3 +24,4 @@ else // Si la vida es menor a 40 (entre 0 y 30)...
 }
 
 image_xscale = max(muro.vida, 0) / muro.vida_max; // Estira la barra en X según la vida (vida 50 = 0.5 = mitad de ancho)
+*/

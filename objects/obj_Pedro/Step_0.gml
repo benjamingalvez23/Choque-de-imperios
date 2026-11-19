@@ -23,8 +23,8 @@ if (btnDerecha){
 }
 
 // Colision eje x
-if (place_meeting(x + paso_x, y, obj_muro)){
-    while (!place_meeting(x + sign(paso_x), y, obj_muro)){
+if (place_meeting(x + paso_x, y, [obj_muro, obj_muro_invisible, obj_invisible])){
+    while (!place_meeting(x + sign(paso_x), y, [obj_muro, obj_muro_invisible, obj_invisible])){
         x += sign(paso_x);
     }
     paso_x = 0;
@@ -32,10 +32,16 @@ if (place_meeting(x + paso_x, y, obj_muro)){
 x += paso_x;
 
 // Colision eje y
-if (place_meeting(x, y + paso_y, obj_muro)){
-    while (!place_meeting(x, y + sign(paso_y), obj_muro)) {
+if (place_meeting(x, y + paso_y, [obj_muro, obj_muro_invisible, obj_invisible])){
+    while (!place_meeting(x, y + sign(paso_y), [obj_muro, obj_muro_invisible, obj_invisible])) {
         y += sign(paso_y);
     }
     paso_y = 0;
 }
 y += paso_y;
+
+// Cooldown para reparar muros, cada 3 segundos
+if (contador_reparar < tiempo_reparar)
+{
+    contador_reparar += 1;
+}

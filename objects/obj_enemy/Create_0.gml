@@ -1,5 +1,6 @@
-damage_enemy = 10;        
-velocidad = 1.5;
+damage_enemy = 1;        
+velocidad = 2;
+vida = 30;
 objetivo = instance_nearest(x, y, obj_muro);
 
 // Contador de ataque
