@@ -1,3 +1,2 @@
-speed = 6;
-damage = 1;
-life = 90;
+vel_bala = 6;
+danio = 5;

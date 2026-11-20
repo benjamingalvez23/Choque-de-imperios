@@ -1,70 +1,35 @@
-
-var barra_x = 20;
-var barra_y = 20;
-
-var ancho = 200;
-var alto = 25;
-
-var porcentaje = vida / vida_maxima;
+var p_vida  = clamp(vida / vida_maxima, 0, 1);
+var p_furia = clamp(furia / furia_maxima, 0, 1);
 
 draw_set_color(c_red);
-draw_rectangle(
-    barra_x,
-    barra_y,
-    barra_x + ancho,
-    barra_y + alto,
-    false
-);
+draw_rectangle(20, 20, 220, 45, false);
 
 draw_set_color(c_lime);
-draw_rectangle(
-    barra_x,
-    barra_y,
-    barra_x + (ancho * porcentaje),
-    barra_y + alto,
-    false
-);
+draw_rectangle(20, 20, 20 + 200 * p_vida, 45, false);
 
 draw_set_color(c_white);
-draw_text(barra_x, barra_y + 30,
-    "Vida: " + string(vida) + " / " + string(vida_maxima)
-);
+draw_text(20, 50, "Vida: " + string(vida) + " / " + string(vida_maxima));
 
-draw_set_color(c_white);
-
-// Posición de la barra
-var furia_x = 20;
-var furia_y = 85;
-
-// Tamaño
-var furia_ancho = 200;
-var furia_alto = 20;
-
-// Calcular porcentaje
-var porcentaje_furia = furia / furia_maxima;
-
-// Fondo oscuro
+// -------- Furia --------
 draw_set_color(c_black);
-draw_rectangle(
-    furia_x,
-    furia_y,
-    furia_x + furia_ancho,
-    furia_y + furia_alto,
-    false
-);
+draw_rectangle(20, 85, 220, 105, false);
 
-// Barra azul
-draw_set_color(c_blue);
-draw_rectangle(
-    furia_x,
-    furia_y,
-    furia_x + (furia_ancho * porcentaje_furia),
-    furia_y + furia_alto,
-    false
-);
+draw_set_color(furia_activa ? c_orange : c_blue);
+draw_rectangle(20, 85, 20 + 200 * p_furia, 105, false);
 
-// Texto
 draw_set_color(c_white);
-draw_text(furia_x, furia_y + 23,
-    "Furia: " + string(furia) + " / " + string(furia_maxima)
-);
+if (furia_activa)
+{
+	var seg = ceil(tiempo_furia / game_get_speed(gamespeed_fps));
+	draw_text(20, 108, "¡FURIA ACTIVA! " + string(seg) + " s");
+}
+else if (furia >= furia_maxima)
+{
+	draw_text(20, 108, "Furia lista: presiona R");
+}
+else
+{
+	draw_text(20, 108, "Furia: " + string(floor(furia)) + " / " + string(furia_maxima));
+}
+
+draw_set_color(c_white);
