@@ -1,11 +1,3 @@
-vida -= 5;
+recibir_danio(other.danio);
 
-vida = max(vida, 0);
-
-if (vida <= 0) {
-    show_message("¡Has muerto!");
-}
-
-with (other) {
-    instance_destroy();
-}
+with (other) instance_destroy();
