@@ -63,7 +63,7 @@
     },
     "name":"spt_right_pedro",
     "playback":1,
-    "playbackSpeed":5.0,
+    "playbackSpeed":8.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

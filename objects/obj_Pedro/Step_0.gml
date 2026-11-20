@@ -19,7 +19,8 @@ if (btnDerecha){
 } else if (btnAbajo){
     sprite_index = spt_down_pedro;
 } else{
-    sprite_index = spt_idle_pedro;
+    image_index = 0;
+	//sprite_index = spt_idle_pedro;
 }
 
 // Colision eje x

@@ -1,0 +1,1 @@
+direccion_disparo = 180;     
